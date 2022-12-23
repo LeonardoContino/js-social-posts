@@ -62,3 +62,23 @@ const posts = [
     likes: 150,
   },
 ];
+
+//dichiaro elementi
+const postIcon = document.querySelector(".post-meta__icon");
+
+let postElement = "";
+
+posts.forEach((post, i) => {
+  //   console.log(post);
+  const imgprofile = `<img src="${post.photoprofile}">`;
+  postElement += ` <div class="post-meta">
+  <div class="post-meta__icon">${imgprofile}
+  </div>
+  <div class="post-meta__data">
+    <div class="post-meta__author">Phil Mangione</div>
+    <div class="post-meta__time">4 mesi fa</div>
+  </div>
+</div>`;
+});
+
+postIcon.innerHTML = postElement;
