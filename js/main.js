@@ -31,6 +31,8 @@ testo del bottone e incrementiamo il counter dei likes relativo.
 
  */
 
+// funzione per like
+
 //creo array
 
 const posts = [
@@ -68,7 +70,7 @@ const post = document.querySelector(".post");
 
 let postElement = "";
 
-posts.forEach((post) => {
+posts.forEach((post, i) => {
   //   console.log(post);
   const imgprofile = `<img class="profile-pic" src="${post.photoprofile}">`;
   const userprofile = `<div class="post-meta__author">${post.nome}</div>`;
@@ -109,3 +111,12 @@ posts.forEach((post) => {
 });
 
 post.innerHTML = postElement;
+
+const btnLike = document.querySelector(".likes__cta");
+let numberLike = document.getElementById("like-counter-1");
+console.log(btnLike, numberLike);
+
+btnLike.addEventListener("click", function () {
+  numberLike = posts.likes;
+  console.log(numberLike);
+});
