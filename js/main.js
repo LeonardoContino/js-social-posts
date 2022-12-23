@@ -30,3 +30,35 @@ testo del bottone e incrementiamo il counter dei likes relativo.
   il colore del bottone.
 
  */
+
+//creo array
+
+const posts = [
+  {
+    id: 1,
+    nome: "jack",
+    photoprofile: "https://unsplash.it/300/300?image=15",
+    date: 11 / 24 / 2000,
+    text: "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto.Et nihil ullam aut alias.",
+    imgpost: "https://unsplash.it/300/300?image=15",
+    likes: 80,
+  },
+  {
+    id: 2,
+    nome: "leo",
+    photoprofile: "https://unsplash.it/300/300?image=15",
+    date: 10 / 14 / 2001,
+    text: "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto.Et nihil ullam aut alias.",
+    imgpost: "https://unsplash.it/300/300?image=15",
+    likes: 50,
+  },
+  {
+    id: 3,
+    nome: "franco",
+    photoprofile: "https://unsplash.it/300/300?image=15",
+    date: 01 / 20 / 2002,
+    text: "Placeat libero ipsa nobis ipsum quibusdam quas harum ut. Distinctio minima iusto. Ad ad maiores et sint voluptate recusandae architecto.Et nihil ullam aut alias.",
+    imgpost: "https://unsplash.it/300/300?image=15",
+    likes: 150,
+  },
+];
